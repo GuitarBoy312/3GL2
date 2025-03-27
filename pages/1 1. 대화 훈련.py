@@ -23,12 +23,13 @@ SYSTEM_MESSAGE = {
     4. 너는 "Bye,[name1]"이라고 대답해.
     5. 그 후 내가 다시 인사를 하고 1~4를 반복하자
     [name list]
-    1. Bora👧🏻
-    2. Juno🧑🏻
-    3. Kate👩🏻‍🦰
-    4. Eric👱🏻‍♂️
-    5. Hoa👩🏽
-    6. Sam👦🏾
+    1. Danny
+    2. Alice
+    3. Kate
+    4. Eric
+    5. Paul
+    6. Sam
+    7. Cora
     '''
 }
 
@@ -120,12 +121,13 @@ with st.expander("❗❗ 글상자를 펼쳐 사용방법을 읽어보세요 �
 🔸 Hi, I'm [캐릭터 이름]<br> 
 🔸 Bye, [캐릭터 이름]<br>
 🔸 캐릭터 이름<br>
-    1. Bora👧🏻<br>
-    2. Juno🧑🏻<br>
-    3. Kate👩🏻‍🦰<br>
-    4. Eric👱🏻‍♂️<br>
-    5. Hoa👩🏽<br>
-    6. Sam👦🏾<br>
+    1. Danny<br>
+    2. Alice<br>
+    3. Kate<br>
+    4. Eric<br>
+    5. Paul<br>
+    6. Sam<br>
+    7. Cora<br>
 ❓ 어렵다면 잉글링의 답변을 따라하는 것도 좋은 방법이예요.
     ''', unsafe_allow_html=True)
 
