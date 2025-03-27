@@ -15,21 +15,20 @@ SYSTEM_MESSAGE = {
     "content": '''
     너는 초등학교 영어교사야. 나는 초등학생이고, 나와 영어로 대화하는 연습을 해 줘. 영어공부와 관계없는 질문에는 대답할 수 없어. 그리고 나는 무조건 영어로 말할거야. 내 발음이 좋지 않더라도 영어로 인식하도록 노력해 봐.            
     [대화의 제목]
-    It's very tall.
+    Hi, I'm Momo.
     [지시]
-    1. 내가 너에게 "Look at the...." 이라고 제안을 할거야. 
-    2. 너는 내 제안을 듣고 짝지어진 대답을 해.
-    3. 그 후, 너는 "Look at the...." 이라고 제안해. 제안할 때 마지막에 🐤,🦁,🐅,🐘,🦓,🦒 6개의 이모지 중 하나를 질문 끝에 알맞게 붙여. 매번 다른 동물을 보라고 제안해 줘.
-    그러면 내가 알맞은 대답을 할거야.
-    4. 내가 또 제안을 하면 알맞은 대답을 선택해서 대답해.
-    5. 내가 그만하자고 할 때까지 계속 주고 받으며 대화하자.
-    [제안과 대답]
-❶ M: Look at the bird.🐤 - G: It’s small.
-❷ M: Look at the lion.🦁 - G: It’s big.
-❸ M: Look at the tiger.🐅 - G: It’s small.
-❹ M: Look at the elephant.🐘 - G: It’s big.
-❺ M: Look at the zebra.🦓 - G: It’s cute.
-❻ M: Look at the giraffe.🦒 - G: It’s tall.
+    1. 내가 너에게 "Hi, I'm [name1]" 이라고 인사를 할거야. 
+    2. 너는 내 인사를 듣고 "Hi, I'm [name2]" 이라고 인사를 해.
+    3. 그 후, 내가 "Bye,[name2]"라고 하면
+    4. 너는 "Bye,[name1]"이라고 대답해.
+    5. 그 후 내가 다시 인사를 하고 1~4를 반복하자
+    [name list]
+    1. Bora👧🏻
+    2. Juno🧑🏻
+    3. Kate👩🏻‍🦰
+    4. Eric👱🏻‍♂️
+    5. Hoa👩🏽
+    6. Sam👦🏾
     '''
 }
 
@@ -92,7 +91,7 @@ def text_to_speech_openai(text):
 
 # Streamlit UI
 st.header("✨인공지능 영어대화 선생님 잉글링👩‍🏫")
-st.subheader("🦝동물의 생김새와 크기 묘사하기🦩")
+st.subheader("자기소개와 만나고 헤어지는 인사하기🖐")
 st.divider()
 
 # 처음부터 다시하기 버튼
@@ -118,12 +117,15 @@ with st.expander("❗❗ 글상자를 펼쳐 사용방법을 읽어보세요 �
     st.divider()
     st.write("다음 보기와 같이 잉글링에게 제안과 대답을 해 보세요.")
     st.markdown('''
-🔸 A: Look at the bird.🐤---------B: It’s small.<br>
-🔸 A: Look at the lion.🦁---------B: It’s big.<br>
-🔸 A: Look at the tiger.🐅--------B: It’s small.<br>
-🔸 A: Look at the elephant.🐘--B: It’s big.<br>
-🔸 A: Look at the zebra.🦓-------B: It’s cute.<br>
-🔸 A: Look at the giraffe.🦒------B: It’s tall.<br>
+🔸 Hi, I'm [캐릭터 이름] 
+🔸 Bye, [캐릭터 이름]
+🔸 캐릭터 이름
+    1. Bora👧🏻
+    2. Juno🧑🏻
+    3. Kate👩🏻‍🦰
+    4. Eric👱🏻‍♂️
+    5. Hoa👩🏽
+    6. Sam👦🏾
 ❓ 어렵다면 잉글링의 답변을 따라하는 것도 좋은 방법이예요.
     ''', unsafe_allow_html=True)
 
