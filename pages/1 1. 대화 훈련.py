@@ -18,7 +18,7 @@ SYSTEM_MESSAGE = {
     Hi, I'm Momo.
     [지시]
     1. 내가 너에게 "Hi, I'm [name1]" 이라고 인사를 할거야. 
-    2. 너는 내 인사를 듣고 "Hi, I'm [name2]" 이라고 인사를 해.
+    2. 너는 내 인사를 듣고 너의 이름을 무작위로 정해서 "Hi, I'm [name2]" 이라고 인사를 해. 너의 이름은 매번 바뀌어야 해.
     3. 그 후, 내가 "Bye,[name2]"라고 하면
     4. 너는 "Bye,[name1]"이라고 대답해.
     5. 그 후 내가 다시 인사를 하고 1~4를 반복하자
@@ -117,15 +117,15 @@ with st.expander("❗❗ 글상자를 펼쳐 사용방법을 읽어보세요 �
     st.divider()
     st.write("다음 보기와 같이 잉글링에게 제안과 대답을 해 보세요.")
     st.markdown('''
-🔸 Hi, I'm [캐릭터 이름] 
-🔸 Bye, [캐릭터 이름]
-🔸 캐릭터 이름
-    1. Bora👧🏻
-    2. Juno🧑🏻
-    3. Kate👩🏻‍🦰
-    4. Eric👱🏻‍♂️
-    5. Hoa👩🏽
-    6. Sam👦🏾
+🔸 Hi, I'm [캐릭터 이름]<br> 
+🔸 Bye, [캐릭터 이름]<br>
+🔸 캐릭터 이름<br>
+    1. Bora👧🏻<br>
+    2. Juno🧑🏻<br>
+    3. Kate👩🏻‍🦰<br>
+    4. Eric👱🏻‍♂️<br>
+    5. Hoa👩🏽<br>
+    6. Sam👦🏾<br>
 ❓ 어렵다면 잉글링의 답변을 따라하는 것도 좋은 방법이예요.
     ''', unsafe_allow_html=True)
 
