@@ -118,8 +118,8 @@ with st.expander("❗❗ 글상자를 펼쳐 사용방법을 읽어보세요 �
     st.divider()
     st.write("다음 보기와 같이 잉글링에게 제안과 대답을 해 보세요.")
     st.markdown('''
-🔸 Hi, I'm [캐릭터 이름]<br> 
-🔸 Bye, [캐릭터 이름]<br>
+1️⃣ Hi, I'm [캐릭터 이름]<br> 
+2️⃣ Bye, [캐릭터 이름]<br>
 🔸 캐릭터 이름<br>
     1. Danny<br>
     2. Alice<br>
