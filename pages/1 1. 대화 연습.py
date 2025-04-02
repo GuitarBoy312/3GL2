@@ -121,13 +121,13 @@ with st.expander("❗❗ 글상자를 펼쳐 사용방법을 읽어보세요 �
 1️⃣ Hi, I'm [캐릭터 이름]<br> 
 2️⃣ Bye, [캐릭터 이름]<br>
 🔸 캐릭터 이름<br>
-    1. Danny<br>
-    2. Alice<br>
-    3. Kate<br>
-    4. Eric<br>
-    5. Paul<br>
-    6. Sam<br>
-    7. Cora<br>
+    1. Kate(케이트)<br>
+    2. Eric(에릭)<br>
+    3. Paul(폴)<br>
+    4. Sam(샘)<br>
+    5. Cora(코라)<br>
+    6. Danny(대니)<br>
+    7. Alice(엘리스)<br>
 ❓ 어렵다면 잉글링의 답변을 따라하는 것도 좋은 방법이예요.
     ''', unsafe_allow_html=True)
 
