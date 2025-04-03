@@ -98,7 +98,7 @@ st.write(
 )
 st.write(
     "<div style='text-align: center; font-size: 25px; font-weight: bold;'>"
-    "자기소개와 만나고 헤어지는 인사하기🖐</div>",
+    "안부를 묻고 답하기🖐</div>",
     unsafe_allow_html=True
 )
 st.divider()
