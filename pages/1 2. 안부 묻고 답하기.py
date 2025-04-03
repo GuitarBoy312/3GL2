@@ -93,7 +93,7 @@ def text_to_speech_openai(text):
 # Streamlit UI
 st.header("✨인공지능 영어대화 선생님 잉글링👩‍🏫")
 st.write(
-    "<div style='text-align: center; font-size: 20px; font-weight: bold;'>"
+    "<div style='text-align: center; font-size: 40px; font-weight: bold;'>"
     "자기소개와 만나고 헤어지는 인사하기🖐</div>",
     unsafe_allow_html=True
 )
