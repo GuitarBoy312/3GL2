@@ -97,7 +97,7 @@ st.write(
     unsafe_allow_html=True
 )
 st.write(
-    "<div style='text-align: center; font-size: 30px; font-weight: bold;'>"
+    "<div style='text-align: center; font-size: 25px; font-weight: bold;'>"
     "자기소개와 만나고 헤어지는 인사하기🖐</div>",
     unsafe_allow_html=True
 )
@@ -111,33 +111,40 @@ if st.button("처음부터 다시하기", type="primary"):
 # 확장 설명
 with st.expander("❗❗ 글상자를 펼쳐 사용방법을 읽어보세요 👆✅", expanded=False):
     st.markdown(
-    """     
-    1️⃣ [녹음 시작] 버튼을 눌러 잉글링에게 말하기.<br>
-    2️⃣ [녹음 완료] 버튼을 누르고 내가 한 말과 잉글링의 대답 들어보기.<br> 
-    3️⃣ 재생 막대의 버튼으로 재생▶ 및 정지⏸,<br>
-       재생 막대의 오른쪽 스노우맨 버튼(점 세개)을 눌러 재생 속도를 조절할 수 있습니다.<br> 
-    4️⃣ [녹음 시작] 버튼을 다시 눌러 대답하고 이어서 바로 질문하기.<br>
-    5️⃣ 1~3번을 반복하기. 말문이 막힐 땐 [잠깐 멈춤] 버튼을 누르기.<br>
-    <br>
-    🙏 잉글링은 완벽하게 이해하거나 제대로 대답하지 않을 수 있어요.<br> 
-    🙏 그럴 때에는 [처음부터 다시하기] 버튼을 눌러주세요.
-    """
-    ,  unsafe_allow_html=True)
+        """     
+        **1️⃣ [녹음 시작] 버튼을 눌러 잉글링에게 말하기.**  
+        **2️⃣ [녹음 완료] 버튼을 누르고 내가 한 말과 잉글링의 대답 들어보기.**  
+        **3️⃣ 재생 막대의 버튼으로 재생 ▶ 및 정지 ⏸,**  
+        잉글링의 말이 빠르다면 재생 막대의 오른쪽 스노우맨 버튼(점 세 개)을 눌러 재생 속도를 조절하기.  
+        **4️⃣ 1~3번을 반복하기.**  
+        말문이 막힐 땐 [잠깐 멈춤] 버튼을 누르고 할 말을 생각한 후 [녹음 시작] 버튼을 다시 눌러 말하기.
+        """
+    )
+
+    st.warning(
+        "🙏 잉글링은 완벽하게 이해하거나 제대로 대답하지 않을 수 있어요.\n\n"
+        "🙏 그럴 때에는 [처음부터 다시하기] 버튼을 눌러주세요."
+    )
+
     st.divider()
-    st.write("다음 보기와 같이 잉글링에게 제안과 대답을 해 보세요.")
-    st.markdown('''
-1️⃣ Hi, I'm [캐릭터 이름]<br> 
-2️⃣ I'm fine. How are you?<br>
-🔸 캐릭터 이름<br>
-    1. Kate(케이트)<br>
-    2. Eric(에릭)<br>
-    3. Paul(폴)<br>
-    4. Sam(샘)<br>
-    5. Cora(코라)<br>
-    6. Danny(대니)<br>
-    7. Alice(엘리스)<br>
-❓ 어렵다면 잉글링의 답변을 따라하는 것도 좋은 방법이예요.
-    ''', unsafe_allow_html=True)
+
+    st.write("### 🗣️ 잉글링과 이렇게 대화해 보세요!")
+
+    st.markdown(
+        """
+        **😀 학습자:** Hi, I'm **[내가 선택한 캐릭터 이름]**  
+        **🤖 잉글링:** Hi, I'm **[잉글링이 선택한 캐릭터 이름] How are you?**  
+        **😀 학습자:** I'm fine. How are you?**  
+        **🤖 잉글링:** I'm fine.**  
+        """
+    )
+
+    st.subheader("🔸 캐릭터 이름 예시")
+    character_names = ["Kate(케이트)", "Eric(에릭)", "Paul(폴)", "Sam(샘)", "Cora(코라)", "Danny(대니)", "Alice(엘리스)"]
+    for name in character_names:
+        st.write(f"- {name}")
+
+    st.info("❓ 어렵다면 잉글링의 답변을 따라하는 것도 좋은 방법이에요.")
 
     
 # 버튼 배치
