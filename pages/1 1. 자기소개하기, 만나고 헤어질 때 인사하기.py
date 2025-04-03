@@ -120,7 +120,7 @@ with st.expander("❗❗ 글상자를 펼쳐 사용방법을 읽어보세요 �
 😀학습자: Hi, I'm [내가 선택한 캐릭터 이름]<br> 
 🤖잉글링: Hi, I'm [잉글링이 선택한 캐릭터 이름]<br>
 😀학습자: Bye, [잉글링의 캐릭터 이름]<br>
-🤖잉글링: Bye, [내 캐릭터 이름]<br>
+🤖잉글링: Bye, [내 캐릭터 이름]<br><br>
 🔸 캐릭터 이름 예시<br>
     1. Kate(케이트)<br>
     2. Eric(에릭)<br>
@@ -128,7 +128,7 @@ with st.expander("❗❗ 글상자를 펼쳐 사용방법을 읽어보세요 �
     4. Sam(샘)<br>
     5. Cora(코라)<br>
     6. Danny(대니)<br>
-    7. Alice(엘리스)<br>
+    7. Alice(엘리스)<br><br>
 ❓ 어렵다면 잉글링의 답변을 따라하는 것도 좋은 방법이예요.
     ''', unsafe_allow_html=True)
 
