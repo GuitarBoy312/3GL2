@@ -91,7 +91,11 @@ def text_to_speech_openai(text):
         st.error(f"텍스트를 음성으로 변환하는 중 오류가 발생했습니다: {e}")
 
 # Streamlit UI
-st.header("✨인공지능 영어대화 선생님 잉글링👩‍🏫")
+st.write(
+    "<div style='text-align: center; font-size: 35px; font-weight: bold;'>"
+    "✨인공지능 영어대화 선생님 잉글링👩‍🏫</div>",
+    unsafe_allow_html=True
+)
 st.write(
     "<div style='text-align: center; font-size: 30px; font-weight: bold;'>"
     "자기소개와 만나고 헤어지는 인사하기🖐</div>",
