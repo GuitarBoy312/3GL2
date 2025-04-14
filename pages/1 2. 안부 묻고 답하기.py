@@ -131,18 +131,12 @@ with st.expander("❗❗ 글상자를 펼쳐 사용방법을 읽어보세요 �
     st.subheader("🔸 캐릭터 이름 예시")
     st.markdown(
         """
-        **Kate(케이트)**
-        
-        **Eric(에릭)**  
-        
-        **Paul(폴)** 
-        
+        **Kate(케이트)**        
+        **Eric(에릭)**          
+        **Paul(폴)**         
         **Sam(샘)**
-
-        **Cora(코라)**
-        
-        **Danny(대니)**
-        
+        **Cora(코라)**        
+        **Danny(대니)**      
         **Alice(엘리스)**
         """
     )
