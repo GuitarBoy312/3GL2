@@ -134,15 +134,13 @@ with st.expander("❗❗ 글상자를 펼쳐 사용방법을 읽어보세요 �
         **Kate(케이트)**        
         **Eric(에릭)**          
         **Paul(폴)**         
-        **Sam(샘)**
+        **Sam(샘)**                                                                                                                 
         **Cora(코라)**        
         **Danny(대니)**      
         **Alice(엘리스)**
         """
     )
-    character_names = ["Kate(케이트)", "Eric(에릭)", "Paul(폴)", "Sam(샘)", "Cora(코라)", "Danny(대니)", "Alice(엘리스)"]
-    for name in character_names:
-        st.write(f"- {name}")
+    
     st.write("### 🗣️ 잉글링과 이렇게 대화해 보세요!")
 
     st.markdown(
