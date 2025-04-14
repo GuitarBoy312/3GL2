@@ -135,7 +135,6 @@ with st.expander("❗❗ 글상자를 펼쳐 사용방법을 읽어보세요 �
         **Eric(에릭)**          
         **Paul(폴)**         
         **Sam(샘)**
-        
         **Cora(코라)**        
         **Danny(대니)**      
         **Alice(엘리스)**
