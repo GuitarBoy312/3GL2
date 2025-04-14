@@ -128,7 +128,10 @@ with st.expander("❗❗ 글상자를 펼쳐 사용방법을 읽어보세요 �
     )
 
     st.divider()
-
+    st.subheader("🔸 캐릭터 이름 예시")
+    character_names = ["Kate(케이트)", "Eric(에릭)", "Paul(폴)", "Sam(샘)", "Cora(코라)", "Danny(대니)", "Alice(엘리스)"]
+    for name in character_names:
+        st.write(f"- {name}")
     st.write("### 🗣️ 잉글링과 이렇게 대화해 보세요!")
 
     st.markdown(
@@ -143,10 +146,7 @@ with st.expander("❗❗ 글상자를 펼쳐 사용방법을 읽어보세요 �
         """
     )
 
-    st.subheader("🔸 캐릭터 이름 예시")
-    character_names = ["Kate(케이트)", "Eric(에릭)", "Paul(폴)", "Sam(샘)", "Cora(코라)", "Danny(대니)", "Alice(엘리스)"]
-    for name in character_names:
-        st.write(f"- {name}")
+
 
     st.info("❓ 어렵다면 잉글링의 답변을 따라하는 것도 좋은 방법이에요.")
 
